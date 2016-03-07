@@ -1,0 +1,80 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[grey]{classic}                % idem
+
+%\usepackage[T1]{fontenc}
+% character encoding
+\usepackage[utf8x]{inputenc}                   % replace by the encoding you are using
+\usepackage[english]{babel}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+\fancyfoot[RE,LO]{\footnotesize } % other info in "inner" position of footer line
+
+% personal data
+\firstname{Giovanni}
+\familyname{Iannelli}
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+\address{via Galvani 2}{56126 Pisa}{Italy}    % optional, remove the line if not wanted
+\mobile{+39 347 4279310}                    % optional, remove the line if not wanted
+\email{iannelli.giovanni@gmail.com}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[75pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\begin{document}
+\maketitle
+
+\section{Personal informations}
+\cvline{Birth}{\small 12 August 1992, Bolzano (Bozen), Italy\normalsize}
+\cvline{Citizenship}{\small Italian\normalsize}
+\cvline{Status}{\small Graduate student\normalsize}
+
+\section{Education}
+\cventry{2015-Present}{Master student in Theoretical Physics}{Universit\`a di Pisa}{Italy}{}{\small {During my first year of Master's studies in Theoretical Physics I'm focusing on Quantum Field Theory, Statistical Physics and their computational aspects}} % arguments 3 to 6 are optional
+\cventry{2011-2015}{Bachelor's Degree in Physics}{Universit\`a di Pisa}{Italy}{}{} % arguments 3 to 6 are optional
+\cvline{Thesis}{\small{\emph{Bosons in an harmonic trap: Bose-Einstein condensation and a Path Integral Monte Carlo algorithm}}}
+\cvline{Supervisor}{\small Ettore Vicari, professor at Universit\`a di Pisa}
+\cvline{Description}{\small I discussed the Bose-Einstein Condensation in a system of non interacting bosons affected by an harmonic potential, then, I showed that the partition function of the system could be expressed in terms of Feynman Path Integrals. Considering a Path Integral in Statistical Mechanics as a weighted sum of paths, I presented a method to sample the paths corrisponding to the positions (or momenta) of bosons}
+
+\section{Programming experience} 
+\cvline{C/C++}{\small I studied C language in university, as it is part of the program of my Bachelor's Degree. Then, I studied C++ to write simple object-oriented programs and make usage of ROOT Cern libraries}
+\cvline{FORTRAN~90}{\small I've used FORTRAN 90 language and OpenMP and MPI on top of it to write parallel PDE solvers and Monte Carlo simulations}
+\cvline{Python}{\small ciao}
+\cvline{Git}{\small ciao}
+\cvline{\LaTeX}{ciao}
+\cvline{Others}{ciao}
+
+\section{Languages}
+\hspace{25mm}\small Self-assessment European level \href{http://europass.cedefop.europa.eu/en/resources/european-language-levels-cefr}{CEFR} (C2 maximum evaluation)\normalsize
+\vspace{5mm}
+
+\begin{tabular}{p{67mm} p{40mm} p{40mm} p{20mm}}
+& \textbf{Understanding} & \textbf{Speaking} & \textbf{Writing} \\ \end{tabular}
+\begin{tabular}{p{67mm} p{20mm} p{20mm} p{20mm} p{20mm} p{20mm}}
+& Listening & Reading & Interaction & Production & \\ \end{tabular}
+
+\vspace{3mm}
+%lvl should be in this range A1 < A2 < B1 < B2 < C1 < C2 
+\cvlanguage{Italian}{Mother language}{
+	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
+		C2 & C2 & C2 & C2 & C2
+	\end{tabular}}
+\cvlanguage{English}{Advanced}{
+	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
+		B2 & C1 & B2 & B2 & C1
+	\end{tabular}}
+
+\section{Other courses and achievements}
+\cventry{2010}{First Certificate in English}{University of Cambridge}{}{}{I took this exam when I was in high school, and it certificates the Council of Europe Level B2 in English}
+\cventry{2015}{Statistical Mechanics, Algorithms and Computation}{\'Ecole Normale Sup\'erieure}{\href{https://www.coursera.org/learn/statistical-mechanics}{Coursera MOOC}}{}{\small This online course is an introduction to Monte Carlo algorithms and their applications in Statistical Mechanics and Quantum Statistical Mechanics, using the Path Integral and Density Matrixes framework. At the end of this course, an exam was scheduled, and I completed it as it is stated in this coursera.org \href{}{certificate}}
+\cventry{2015}{High Performance Scientific Computing}{University of Washington}{\href{https://www.coursera.org/learn/statistical-mechanics}{Coursera MOOC}}{}{ciao}
+
+\end{document}
