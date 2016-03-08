@@ -8,6 +8,7 @@
 % character encoding
 \usepackage[utf8x]{inputenc}                   % replace by the encoding you are using
 \usepackage[english]{babel}
+\usepackage{xcolor}
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
@@ -39,21 +40,28 @@
 
 \section{Education}
 \cventry{2015-Present}{Master student in Theoretical Physics}{Universit\`a di Pisa}{Italy}{}{\small {During my first year of Master's studies in Theoretical Physics I'm focusing on Quantum Field Theory, Statistical Physics and their computational aspects}} % arguments 3 to 6 are optional
+
 \cventry{2011-2015}{Bachelor's Degree in Physics}{Universit\`a di Pisa}{Italy}{}{} % arguments 3 to 6 are optional
+
+\cvline{Grade}{103/110}
 \cvline{Thesis}{\small{\emph{Bosons in an harmonic trap: Bose-Einstein condensation and a Path Integral Monte Carlo algorithm}}}
 \cvline{Supervisor}{\small Ettore Vicari, professor at Universit\`a di Pisa}
-\cvline{Description}{\small I discussed the Bose-Einstein Condensation in a system of non interacting bosons affected by an harmonic potential, then, I showed that the partition function of the system could be expressed in terms of Feynman Path Integrals. Considering a Path Integral in Statistical Mechanics as a weighted sum of paths, I presented a method to sample the paths corrisponding to the positions (or momenta) of bosons}
+\cvline{Description}{\small I discussed the Bose-Einstein Condensation in a system of non interacting bosons affected by an harmonic potential. I showed that the partition function of the system could be expressed in terms of Feynman Path Integrals. Considering a Path Integral in Statistical Mechanics as a weighted sum of paths, I presented a method to sample the paths corrisponding to the positions (or momenta) of bosons}
+
+\cventry{2006-2011}{High School Diploma}{Liceo Scientifico Leonardo da Vinci}{Milan}{Italy}{}
+\cvline{Grade}{84/100}
 
 \section{Programming experience} 
-\cvline{C/C++}{\small I studied C language in university, as it is part of the program of my Bachelor's Degree. Then, I studied C++ to write simple object-oriented programs and make usage of ROOT Cern libraries}
-\cvline{FORTRAN~90}{\small I've used FORTRAN 90 language and OpenMP and MPI on top of it to write parallel PDE solvers and Monte Carlo simulations}
-\cvline{Python}{\small ciao}
-\cvline{Git}{\small ciao}
-\cvline{\LaTeX}{ciao}
-\cvline{Others}{ciao}
+\cvline{C/C++}{\small I studied C language in university, as it is part of the program of my Bachelor's Degree. Then, I studied C++ to write simple object-oriented programs and make usage of ROOT (CERN) libraries}
+\cvline{FORTRAN~90}{\small I've used FORTRAN 90 language and OpenMP and MPI on top of it to write parallel PDE solvers, Linear Algebra operations and Monte Carlo simulations}
+\cvline{Python}{\small I've used Python for scripting, Python Scientific packages (Numpy, SciPy) to perform quick-to-write computations, Matplotlib for 2D plotting
+and Mayavi for 3D plotting}
+\cvline{Git}{\small I've a good knowledge of Git VCS, and, throught my university experience, I've got experience in collaborating with other people to the same project}
+\cvline{OS}{\small I've experience in Linux based operative systems, especially Arch Linux based and Debian based, and I've confidence with Bash shell commands}
+\cvline{Others}{\small I've experience in text editing with VIM, typesetting with \LaTeX, auto-building with Makefile, symbolic computing with Wolfram Mathematica, and plotting with Gnuplot}
 
 \section{Languages}
-\hspace{25mm}\small Self-assessment European level \href{http://europass.cedefop.europa.eu/en/resources/european-language-levels-cefr}{CEFR} (C2 maximum evaluation)\normalsize
+\hspace{25mm}\small Self-assessment European level \textcolor{blue}{\href{http://europass.cedefop.europa.eu/en/resources/european-language-levels-cefr}{CEFR}} (C2 maximum evaluation)\normalsize
 \vspace{5mm}
 
 \begin{tabular}{p{67mm} p{40mm} p{40mm} p{20mm}}
@@ -74,7 +82,9 @@
 
 \section{Other courses and achievements}
 \cventry{2010}{First Certificate in English}{University of Cambridge}{}{}{I took this exam when I was in high school, and it certificates the Council of Europe Level B2 in English}
-\cventry{2015}{Statistical Mechanics, Algorithms and Computation}{\'Ecole Normale Sup\'erieure}{\href{https://www.coursera.org/learn/statistical-mechanics}{Coursera MOOC}}{}{\small This online course is an introduction to Monte Carlo algorithms and their applications in Statistical Mechanics and Quantum Statistical Mechanics, using the Path Integral and Density Matrixes framework. At the end of this course, an exam was scheduled, and I completed it as it is stated in this coursera.org \href{}{certificate}}
-\cventry{2015}{High Performance Scientific Computing}{University of Washington}{\href{https://www.coursera.org/learn/statistical-mechanics}{Coursera MOOC}}{}{ciao}
+\cventry{2015}{Statistical Mechanics, Algorithms and Computation}{\'Ecole Normale Sup\'erieure}{Coursera MOOC}{\textcolor{blue}{\href{https://www.coursera.org/learn/statistical-mechanics}{Link}} to course page}
+{\small This online course is an introduction to Monte Carlo algorithms and their applications in Statistical Mechanics and Quantum Statistical Mechanics using the Path Integral and Density Matrixes framework. At the end of this course, an exam was scheduled, and I completed it as it is stated in this coursera.org \textcolor{blue}{\href{http://dgiannelli.github.io/coursera_smac.pdf}{Certificate}}}
+\cventry{2015}{High Performance Scientific Computing}{University of Washington}{Coursera MOOC}{\textcolor{blue}{\href{https://www.coursera.org/course/scicomp}{Link}} to course page}
+{\small After an introduction to Unix like shell, Git, Python, FORTRAN 90, makefile, OpenMP and MPI FORTRAN API, this online course aims to teach how to write parallelized programs to solve typical scientific computing problems such as Linear Algebra optimizations, PDE solving and Monte Carlo simuations. During this course, there were homeworks and project assignments, but there wasn't a final exam}
 
 \end{document}
